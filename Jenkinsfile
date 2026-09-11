@@ -26,7 +26,7 @@ pipeline {
             post {
                 always {
                     emailext(
-                        to: 'Riddhi.sharma1525@gmail.com',
+                        to: 'riddhi.sharma1525@gmail.com',
                         subject: "Jenkins - Run Tests - ${currentBuild.currentResult}",
                         body: "The Run Tests stage has completed with status: ${currentBuild.currentResult}.",
                         attachLog: true
@@ -48,7 +48,7 @@ pipeline {
             post {
                 always {
                     emailext(
-                        to: 'Riddhi.sharma1525@gmail.com',
+                        to: 'riddhi.sharma1525@gmail.com',
                         subject: "Jenkins - NPM Audit Security Scan - ${currentBuild.currentResult}",
                         body: "The NPM Audit security scan has completed with status: ${currentBuild.currentResult}.",
                         attachLog: true
